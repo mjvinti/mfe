@@ -1,6 +1,6 @@
 name: deploy-container
 
-on:
+on: [push]
   push:
     branches:
       - master
