@@ -15,7 +15,8 @@ const AuthApp = () => {
                 if (pathname !== nextPathname) {
                     history.push(nextPathname);
                 }
-            }
+            },
+            onSignIn: () => console.log('user signed in')
         });
 
         history.listen(onParentNavigate);
