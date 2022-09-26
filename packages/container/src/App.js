@@ -26,10 +26,7 @@ const App = () => {
         <StylesProvider generateClassName={generateClassName}>
             <Router history={history}>
                 <div>
-                    <Header
-                        onSignOut={() => setIsSignedIn(false)}
-                        isSignedIn={isSignedIn}
-                    />
+                    <Header onSignOut={() => setIsSignedIn(false)} isSignedIn={isSignedIn} />
                     <Suspense fallback={<Progress />}>
                         <Switch>
                             <Route path='/auth'>
